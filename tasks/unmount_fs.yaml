@@ -1,0 +1,5 @@
+- name: Unmount NFS
+  become: yes
+  ansible.posix.mount:
+    path: "{{ nfs_mountpoint }}"
+    state: unmounted

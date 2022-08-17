@@ -1,0 +1,6 @@
+- name: Remove partition "{{ device_name }}1"
+  become: yes
+  community.general.parted:
+    device: "{{ device_name }}"
+    number: 1
+    state: absent

@@ -1,0 +1,5 @@
+- name: Remove volume group
+  become: yes
+  community.general.lvg:
+    vg: vg00
+    state: absent

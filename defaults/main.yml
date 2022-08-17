@@ -1,0 +1,4 @@
+---
+# defaults file for nfs-server-reset
+device_name: /dev/vdb
+nfs_mountpoint: /srv/nfs

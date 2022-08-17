@@ -1,0 +1,6 @@
+- name: Stop nfs-server
+  become: yes
+  service:
+    name: nfs-server
+    enabled: yes
+    state: stopped

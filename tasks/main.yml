@@ -1,0 +1,7 @@
+---
+# tasks file for nfs-server-reset
+- import_tasks: service.yaml
+- import_tasks: unmount_fs.yaml
+- import_tasks: remove_lv.yaml
+- import_tasks: remove_vg.yaml
+- import_tasks: remove_part.yaml

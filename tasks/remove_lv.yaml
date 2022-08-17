@@ -1,0 +1,7 @@
+- name: Remove the logical volume
+  become: yes
+  community.general.lvol:
+    vg: vg00
+    lv: nfs_1
+    state: absent
+    force: yes
